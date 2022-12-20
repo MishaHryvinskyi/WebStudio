@@ -1,0 +1,24 @@
+  h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+  }
+  
+  .navigation__list,
+  .authentication__link,
+  .authentication,
+  .benefits,
+  .team__list,
+  .team-social__item,
+  .buttons__item,
+  .portfolio__list,
+  .list-work,
+  .address__list,
+  .client,
+  .footer-list
+  {
+    list-style: none;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
