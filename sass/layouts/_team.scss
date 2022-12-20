@@ -4,7 +4,9 @@
   
   .team {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
     & .team__list:not(:last-child) {
     margin-right: 30px;
     }
