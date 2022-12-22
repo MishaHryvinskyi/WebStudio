@@ -465,6 +465,11 @@ body {
 .nopadding {
   padding-top: 0px;
 }
+@media screen and (max-width: 767px) {
+  .nopadding {
+    display: none;
+  }
+}
 
 .section-work-title {
   font-size: 36px;
