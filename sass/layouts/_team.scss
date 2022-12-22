@@ -5,14 +5,8 @@
   .team {
     display: flex;
     justify-content: center;
-    width: 100%;
     & .team__list:not(:last-child) {
     margin-right: 30px;
-    }
-
-    @media screen and(min-width:768px) {
-      width: calc(100% - 2 * 10px / 2);
-      margin: 5px;
     }
   }
 
