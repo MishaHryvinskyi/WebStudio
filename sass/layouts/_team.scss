@@ -3,7 +3,7 @@
   }
   
   .team {
-    display: flex;
+    display: block;
     justify-content: center;
     & .team__list:not(:last-child) {
     margin-right: 30px;
