@@ -1,13 +1,25 @@
 .benefits {
-    display: block; 
+    display: flex;
+    flex-wrap: wrap; 
     & .benefits__item:not(:last-child) {
     margin-right: 30px;
    }   
   }
 
   .benefits__item {
-    width: 270px;
-    margin-bottom: 30px;
+    width: 100%;
+    
+
+    @media screen and (min-width: 768px) {
+      
+      width: calc((100% - 60px)/ 2);
+      
+    }
+    @media screen and (min-width: 1200px) {
+      
+      width: calc((100% - 120px)/ 4);
+      
+    }
   }
   
   .visually-hidden { 
@@ -41,4 +53,5 @@
     height: 120px;
     background: var(--secondary-fon-col);
     border-radius: 4px;
+    
   }  

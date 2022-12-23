@@ -3,8 +3,10 @@
   }
   
   .team {
-    display: block;
-    
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -30px;
+    margin-left: -30px;
    
   }
 
@@ -16,7 +18,7 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     background-color: var(--primary-fon-color);
-    margin-right: 30px;
+    margin-left: 30px;
     margin-bottom: 30px;
     width: 100%;
     height: auto;
@@ -26,6 +28,12 @@
       width: calc((100% - 60px)/ 2);
       
     }
+    @media screen and (min-width: 1200px) {
+      
+      width: calc((100% - 120px)/ 4);
+      
+    }
+    
   }
 
   .team__picks {

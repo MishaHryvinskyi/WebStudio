@@ -435,15 +435,25 @@ body {
 }
 
 .benefits {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
 }
 .benefits .benefits__item:not(:last-child) {
   margin-right: 30px;
 }
 
 .benefits__item {
-  width: 270px;
-  margin-bottom: 30px;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .benefits__item {
+    width: calc((100% - 60px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits__item {
+    width: calc((100% - 120px) / 4);
+  }
 }
 
 .visually-hidden {
@@ -555,14 +565,17 @@ body {
 }
 
 .team {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -30px;
+  margin-left: -30px;
 }
 
 .team__list {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--primary-fon-color);
-  margin-right: 30px;
+  margin-left: 30px;
   margin-bottom: 30px;
   width: 100%;
   height: auto;
@@ -570,6 +583,11 @@ body {
 @media screen and (min-width: 768px) {
   .team__list {
     width: calc((100% - 60px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__list {
+    width: calc((100% - 120px) / 4);
   }
 }
 
