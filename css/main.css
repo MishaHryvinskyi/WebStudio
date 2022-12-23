@@ -66,12 +66,12 @@ body {
   line-height: 1.1666666667;
   letter-spacing: 0.03em;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .hero__button {
@@ -245,26 +245,25 @@ body {
 
 .container {
   width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0px 15px;
   margin: 0 auto;
 }
-
 @media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
+  .container .container {
+    width: 450px;
   }
 }
 @media screen and (min-width: 768px) {
-  .container {
+  .container .container {
     width: 768px;
   }
 }
 @media screen and (min-width: 1170px) {
-  .container {
+  .container .container {
     width: 1170px;
   }
 }
+
 .logo {
   font-family: "Raleway", "sans-serif";
   font-size: 26px;
@@ -559,15 +558,15 @@ body {
   border-radius: 0px 0px 4px 4px;
   background-color: var(--primary-fon-color);
   margin-bottom: 30px;
-  width: 450px;
-  height: 622px;
-  align-items: center;
+  width: 100%;
+  height: auto;
 }
 
 .team__picks {
+  display: block;
   margin-bottom: 30px;
-  width: 450px;
-  height: 460px;
+  width: 100%;
+  height: auto;
 }
 
 .team__title {

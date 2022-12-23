@@ -17,15 +17,16 @@
     border-radius: 0px 0px 4px 4px;
     background-color: var(--primary-fon-color);
     margin-bottom: 30px;
-    width: 450px;
-    height: 622px;
-    align-items: center;
+    width: 100%;
+    height: auto;
+    
   }
 
   .team__picks {
+    display: block;
     margin-bottom: 30px;
-    width: 450px;
-    height: 460px;
+    width: 100%;
+    height: auto;
   }
 
   .team__title {
