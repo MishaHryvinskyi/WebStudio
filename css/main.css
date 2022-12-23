@@ -252,7 +252,17 @@ body {
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 100%;
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1170px) {
+  .container {
+    width: 1170px;
   }
 }
 .logo {
@@ -462,7 +472,7 @@ body {
 .privileges-item {
   justify-content: center;
   margin-bottom: 30px;
-  width: 270px;
+  width: 450px;
   height: 120px;
   background: var(--secondary-fon-col);
   border-radius: 4px;
@@ -551,6 +561,7 @@ body {
   margin-bottom: 30px;
   width: 450px;
   height: 622px;
+  align-items: center;
 }
 
 .team__picks {
