@@ -99,9 +99,9 @@ body {
   display: inline-block;
   background: var(--acent-color);
   border-radius: 4px;
-  max-width: 216px;
+  max-width: 200px;
   max-height: 50px;
-  padding: 10px 32px;
+  padding: 10px 24px;
   transition-property: background-color, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -111,6 +111,16 @@ body {
   color: var(--primary-text-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+}
+@media screen and (min-width: 1200px) {
+  .hero__button {
+    max-width: 216px;
+    max-height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    padding: 10px 32px;
+  }
 }
 
 .buttons {
@@ -452,7 +462,7 @@ body {
 
 .hero__title {
   color: var(--primary-fon-color);
-  max-width: 696px;
+  max-width: 360px;
   font-size: 26px;
   font-weight: 900;
   line-height: 1.6153846154;
@@ -468,6 +478,7 @@ body {
     font-weight: 900;
     line-height: 1.3636363636;
     letter-spacing: 0.06em;
+    max-width: 696px;
   }
 }
 
@@ -515,8 +526,15 @@ body {
   line-height: 1.1428571429;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  justify-content: center;
+  display: flex;
   color: var(--primary-text-color);
   margin-bottom: var(--primary-padding-bottom);
+}
+@media screen and (min-width: 1200px) {
+  .benefits__title {
+    display: block;
+  }
 }
 
 .benefits__paragraph {

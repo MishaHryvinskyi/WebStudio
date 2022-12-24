@@ -11,6 +11,7 @@
     margin: 0 auto;
     padding-bottom: 118px;
     padding-top: 118px;
+    
 
 
     @media screen and (min-width: 768px) {
@@ -42,7 +43,7 @@
   
   .hero__title {
     color: var(--primary-fon-color);
-    max-width: 696px;
+    max-width: 360px;
     @include font($fs:26, $fw:900, $lh:42, $ls:0.06em);
     text-transform: uppercase;
     margin-bottom: 30px;
@@ -52,5 +53,6 @@
     @media screen and (min-width: 1200px) {
       
       @include font($fs:44, $fw:900, $lh:60, $ls:0.06em);
+      max-width: 696px;
   }
 }

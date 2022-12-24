@@ -41,8 +41,16 @@
   .benefits__title {
     @include font($fs:14, $fw:700, $lh:16, $ls:0.03em);
     text-transform: uppercase;
+    justify-content: center;
+    display: flex;
     color: var(--primary-text-color);
     margin-bottom:var(--primary-padding-bottom) ;
+
+    @media screen and (min-width: 1200px) {
+      
+      display: block;
+      
+    }
   }
   .benefits__paragraph {
     color: var(--secondary-texy-color);
