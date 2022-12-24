@@ -1,7 +1,7 @@
 .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)),
-    url(../images/hero.jpg) ;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+  rgba(47, 48, 58, 0.4)),
+    url(../images/hero-mob.jpg) ;
     background-repeat: no-repeat; 
     background-size: cover;
     background-color: var(--darc-fon-color); 
@@ -13,8 +13,23 @@
     padding-top: 118px;
 
 
+    @media screen and (min-width: 768px) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+      url(../images/hero-tablet.jpg) ;
+      background-repeat: no-repeat; 
+      background-size: cover;
+      max-width: 768px;
+      padding-bottom: 118px;
+      padding-top: 118px;
+  }
+
     @media screen and (min-width: 1200px) {
-      
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+      url(../images/hero.jpg) ;
+      background-repeat: no-repeat; 
+      background-size: cover;
       max-width: 1600px;
       padding-bottom: 200px;
       padding-top: 200px;
