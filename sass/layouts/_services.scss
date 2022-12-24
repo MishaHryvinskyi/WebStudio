@@ -1,6 +1,5 @@
   .nopadding {
     padding-top: 0px;
-
     @media screen and (max-width: 1200px ) {
       display: none;
       
@@ -14,7 +13,8 @@
   }
   
   .list-work { 
-    display:flex;    
+    display:flex;   
+    justify-content: center; 
     & .item-do {
       margin-right: 30px;
     }

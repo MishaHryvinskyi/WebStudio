@@ -21,7 +21,7 @@
   --modal-input-color: rgba(33, 33, 33, 0.2);
 }
 
-.input-checkbox__label, .checkbox-style, .footer-social__icon, .client__link, .client, .team-social__link, .position, .item-p, .privileges-item, .main-navigation, .footer-input__button, .button-close {
+.input-checkbox__label, .checkbox-style, .footer-social__icon, .client__link, .team-social__link, .position, .item-p, .privileges-item, .main-navigation, .footer-input__button, .button-close {
   display: flex;
   align-items: center;
 }
@@ -437,13 +437,15 @@ body {
 .benefits {
   display: flex;
   flex-wrap: wrap;
-}
-.benefits .benefits__item:not(:last-child) {
-  margin-right: 30px;
+  justify-content: center;
+  margin-right: -30px;
+  margin-bottom: -30px;
 }
 
 .benefits__item {
   width: 100%;
+  margin-bottom: 30px;
+  margin-left: 30px;
 }
 @media screen and (min-width: 768px) {
   .benefits__item {
@@ -482,6 +484,7 @@ body {
 
 .benefits__paragraph {
   color: var(--secondary-texy-color);
+  margin-bottom: 30px;
 }
 
 .privileges-item {
@@ -513,6 +516,7 @@ body {
 
 .list-work {
   display: flex;
+  justify-content: center;
 }
 .list-work .item-do {
   margin-right: 30px;
@@ -569,6 +573,7 @@ body {
   flex-wrap: wrap;
   margin-bottom: -30px;
   margin-left: -30px;
+  justify-content: center;
 }
 
 .team__list {
@@ -653,15 +658,31 @@ body {
 }
 
 .client {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
 .client__item {
   width: 170px;
   height: 92px;
-}
-.client__item:not(:last-child) {
   margin-right: 30px;
+  justify-content: center;
+}
+@media screen and (min-width: 480px) {
+  .client__item {
+    width: calc((100% - 60px) / 2);
+  }
+}
+@media screen and (min-width: 768px) {
+  .client__item {
+    width: calc((100% - 90px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .client__item {
+    width: calc((100% - 180px) / 6);
+  }
 }
 
 .client__link {
