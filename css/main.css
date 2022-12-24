@@ -686,7 +686,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .client__item {
-    width: calc((100% - 180px) / 6);
+    width: calc((100% - 150px) / 6);
   }
   .client__item:nth-last-child(-n+1) {
     margin-right: 0;
