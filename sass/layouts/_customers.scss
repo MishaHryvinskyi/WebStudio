@@ -25,10 +25,7 @@
     }
 
     @media screen and (min-width: 1200px) {
-      width: calc((100% - 150px)/ 6);
-      &:nth-last-child(-n+1) {
-        margin-right: 0;
-        }
+      width: 170px;
       }
       }
       
