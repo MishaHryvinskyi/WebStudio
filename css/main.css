@@ -953,7 +953,7 @@ body {
   display: flex;
   justify-content: center;
   font-style: normal;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   .address {
@@ -980,9 +980,6 @@ body {
   color: var(--acent-color);
 }
 
-.footer-social {
-  margin-bottom: 60px;
-}
 @media screen and (min-width: 768px) {
   .footer-social {
     display: flex;
@@ -1138,6 +1135,7 @@ form {
 @media screen and (min-width: 768px) {
   .fle {
     display: flex;
+    margin-bottom: 60px;
   }
 }
 

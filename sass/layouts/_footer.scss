@@ -39,7 +39,8 @@
     display: flex;
     justify-content: center;
     font-style: normal;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
+    
     
     @media screen and (min-width: 768px) {
       font-style: normal;
@@ -67,7 +68,7 @@
   
   }
   .footer-social {
-    margin-bottom: 60px;
+    
 
     @media screen and (min-width: 768px) {
       display: flex;
@@ -227,6 +228,7 @@
     @media screen and (min-width: 768px) {
       
       display: flex;
+      margin-bottom: 60px;
     
   }
     
