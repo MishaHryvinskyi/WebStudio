@@ -25,10 +25,11 @@
 
 .logo__footer {
     font-family: 'Raleway', 'sans-serif';
-    @include font($fs:26, $fw:700, $lh:31, $ls:0.03em);
+    @include font($fs:24, $fw:700, $lh:28, $ls:0.03em);
     color: var(--primary-fon-color);
     text-decoration: none;
-    display: inline-block; 
+    display: flex; 
+    justify-content: center;
     & {
         margin-bottom: 20px;
       }  

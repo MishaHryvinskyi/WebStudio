@@ -130,7 +130,7 @@
 
 // mobile-menu
 .mobil-menu {
-    position: fixed;
+    position: relative;
     display: block;
     background-color: var(--primary-fon-color);
     width: 100wv;
@@ -139,7 +139,7 @@
     left: 0;
     right: 0;
     padding: 48px 0px ;
-    padding-left: 25px;
+    
 }
 .menu-open {
     margin-left: auto;
@@ -153,6 +153,7 @@
 .mob-navigation__item {
     list-style: none;
     display: block;
+    padding-left: 25px;
 }
 
 .mobile-close-menu {

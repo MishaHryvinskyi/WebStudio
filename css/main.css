@@ -21,7 +21,7 @@
   --modal-input-color: rgba(33, 33, 33, 0.2);
 }
 
-.input-checkbox__label, .checkbox-style, .footer-social__icon, .client__link, .team-social__link, .position, .item-p, .privileges-item, .main-navigation, .footer-input__button, .button-close {
+.input-checkbox__label, .checkbox-style, .footer-social__icon, .client__link, .team-social__link, .position, .item-p, .privileges-item, .main-navigation, .button-close {
   display: flex;
   align-items: center;
 }
@@ -238,7 +238,7 @@ body {
 }
 
 .footer-input__button {
-  justify-content: center;
+  display: block;
   width: 200px;
   height: 50px;
   background-color: var(--acent-color);
@@ -251,7 +251,6 @@ body {
   font-weight: 700;
   font-size: 16px;
   cursor: pointer;
-  margin-left: 12px;
   border: none;
 }
 .footer-input__button:hover, .footer-input__button:focus {
@@ -315,13 +314,14 @@ body {
 
 .logo__footer {
   font-family: "Raleway", "sans-serif";
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
-  line-height: 1.1923076923;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
   color: var(--primary-fon-color);
   text-decoration: none;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
 }
 .logo__footer {
   margin-bottom: 20px;
@@ -435,7 +435,7 @@ body {
 }
 
 .mobil-menu {
-  position: fixed;
+  position: relative;
   display: block;
   background-color: var(--primary-fon-color);
   width: 100wv;
@@ -444,7 +444,6 @@ body {
   left: 0;
   right: 0;
   padding: 48px 0px;
-  padding-left: 25px;
 }
 
 .menu-open {
@@ -458,6 +457,7 @@ body {
 .mob-navigation__item {
   list-style: none;
   display: block;
+  padding-left: 25px;
 }
 
 .mobile-close-menu {
@@ -913,8 +913,10 @@ body {
 }
 
 .address {
+  display: flex;
+  justify-content: center;
   font-style: normal;
-  width: 231px;
+  margin-bottom: 60px;
 }
 
 .address-item {
@@ -923,6 +925,8 @@ body {
 }
 
 .address__items {
+  display: flex;
+  justify-content: center;
   color: var(--adres-color);
   text-decoration: none;
   transition-property: color;
@@ -933,7 +937,12 @@ body {
   color: var(--acent-color);
 }
 
+.footer-social {
+  margin-bottom: 60px;
+}
+
 .footer-social__paragraph {
+  display: flex;
   color: var(--secondary-fon-col);
   font-size: 14px;
   font-weight: 700;
@@ -941,6 +950,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
+  justify-content: center;
 }
 
 .footer-social__item {
@@ -977,20 +987,22 @@ body {
 
 .footer-item {
   align-items: baseline;
-  display: flex;
+  display: block;
   justify-content: space-between;
 }
 
 .adress-div {
-  display: inline-block;
-  margin-right: 70px;
+  display: block;
+  justify-content: center;
 }
 
 .footer-input {
-  margin-left: 93px;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-input__paragraph {
+  display: flex;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.1428571429;
@@ -998,18 +1010,23 @@ body {
   text-transform: uppercase;
   color: var(--primary-fon-color);
   margin-bottom: 20px;
+  justify-content: center;
 }
 
 .combination {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .input {
-  width: 358px;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  margin-bottom: 20px;
   background-color: var(--darc-fon-color);
 }
 .input:hover {
@@ -1018,6 +1035,7 @@ body {
 
 .footer-social__list {
   display: flex;
+  justify-content: center;
 }
 
 input[placeholder] {
@@ -1041,6 +1059,11 @@ input[placeholder] {
   line-height: 1.875;
   letter-spacing: 0.06em;
   text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
 }
 
 .portfolio {

@@ -13,8 +13,11 @@
   }
   
   .address {
+    display: flex;
+    justify-content: center;
     font-style: normal;
-    width: 231px;  
+    margin-bottom: 60px;
+      
     
   }
   .address-item {
@@ -23,6 +26,8 @@
   }
   
   .address__items {
+    display: flex;
+    justify-content: center;
     color: var(--adres-color); 
     text-decoration: none;   
     transition-property: color ;
@@ -33,12 +38,17 @@
     color: var(--acent-color);
   }
   }
-  
+  .footer-social {
+    margin-bottom: 60px;
+  }
+
   .footer-social__paragraph {
+    display: flex;
     color:var(--secondary-fon-col);
     @include font($fs:14, $fw:700, $lh:24, $ls:0.03em);
     text-transform: uppercase;
     margin-bottom: 20px;
+    justify-content: center;
   }
   
   .footer-social__item {
@@ -77,44 +87,55 @@
   
   .footer-item {
     align-items: baseline;
-    display: flex;
+    display: block;
     justify-content: space-between;
   }
   
   .adress-div {
-    display: inline-block;
-    margin-right: 70px;
+    display: block;
+    justify-content: center;
+    
   }
   
   .footer-input {
-    margin-left: 93px;
+    display: flex;
+    flex-direction: column;
   }
   
   .footer-input__paragraph {
+    display: flex;
     @include font($fs:14, $fw:700, $lh:16, $ls:0.03em);
     text-transform: uppercase;
     color: var(--primary-fon-color);
     margin-bottom: 20px;
+    justify-content: center;
   }
 
   .combination {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .input {
-    width: 358px;
+    
+    width: 100%;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
+    margin-bottom: 20px;
     background-color: var(--darc-fon-color);
     &:hover {
     border: 1px solid var(--acent-color);
     }
+    
   }
   
   .footer-social__list {
     display: flex;
+    justify-content: center;
   }
 
   input[placeholder] {
@@ -133,4 +154,9 @@
   .footer-input__span {
     @include font($fs:16, $fw:700, $lh:30, $ls:0.06em);
     text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
   }

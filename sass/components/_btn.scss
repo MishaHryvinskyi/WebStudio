@@ -170,8 +170,7 @@
 // footer-buttons
 
   .footer-input__button {
-    @extend %flex-align;
-    justify-content: center;
+    display: block;
     width: 200px;
     height: 50px;
     background-color: var(--acent-color);
@@ -184,7 +183,6 @@
     font-weight: 700;
     font-size: 16px;
     cursor: pointer;
-    margin-left: 12px;
     border: none;
     &:hover,
     &:focus {
