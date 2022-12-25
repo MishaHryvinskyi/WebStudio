@@ -31,6 +31,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .navigation__list,
+.header-link-mobile,
 .authentication__link,
 .authentication,
 .benefits,
@@ -290,13 +291,22 @@ body {
 
 .logo {
   font-family: "Raleway", "sans-serif";
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
-  line-height: 1.1923076923;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--primary-text-color);
-  margin-right: 93px;
+  padding: 16px 16px;
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.1923076923;
+    letter-spacing: 0.03em;
+    margin-right: 93px;
+  }
 }
 
 .logo-web {
@@ -328,6 +338,7 @@ body {
 
 .navigation {
   margin-right: auto;
+  display: none;
 }
 .navigation__list {
   color: var(--primary-text-color);
@@ -347,9 +358,10 @@ body {
 }
 
 .header-link {
-  display: block;
+  display: inline-block;
   padding-top: 32px;
   padding-bottom: 32px;
+  padding-left: 40px;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.1428571429;
@@ -360,13 +372,12 @@ body {
   text-decoration: none;
 }
 .header-link {
-  display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .authentication {
-  display: flex;
+  display: none;
 }
 .authentication .header-link, .authentication {
   color: var(--secondary-texy-color);
@@ -421,6 +432,70 @@ body {
 }
 .effect:hover::after, .effect:focus::after {
   display: inline-block;
+}
+
+.mobil-menu {
+  position: relative;
+  display: block;
+  background-color: var(--primary-fon-color);
+  width: 100wv;
+  height: 100wh;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 48px 0px;
+  padding-left: 25px;
+}
+
+.menu-open {
+  margin-left: auto;
+}
+
+.mob-navigation__list {
+  display: block;
+}
+
+.mobile-close-menu {
+  border: none;
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.icon-close-mobile {
+  width: 18px;
+  height: 18px;
+}
+
+.mob-navigation {
+  display: block;
+}
+
+.header-link-mobile {
+  color: var(--primary-text-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+  list-style: none;
+}
+.header-link-mobile {
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-contacts {
+  color: var(--secondary-texy-color);
+}
+
+.header-link-mobile:active {
+  color: var(--acent-color);
 }
 
 .hero {
