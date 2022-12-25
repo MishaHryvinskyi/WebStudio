@@ -15,10 +15,12 @@
       padding-left: 89px;
       
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1140px) {
       
       padding-right: 15px;
       padding-left: 15px;
+      display: flex;
+      flex-wrap: wrap;
     }
   }
 
@@ -46,6 +48,11 @@
       font-style: normal;
      width: 231px; 
   }
+
+  @media screen and (min-width: 1140px) {
+    font-style: normal;
+    width: 231px;  
+}
 }
   .address-item {
     color: var(--primary-fon-color);
@@ -91,6 +98,7 @@
       text-transform: uppercase;
       margin-bottom: 20px;
   }
+  
   }
   
   .footer-social__item {
@@ -130,7 +138,7 @@
   
   .footer-item {
     align-items: baseline;
-    display: block;
+    display: flex;
     justify-content: space-between;
   }
   
@@ -140,16 +148,22 @@
     
     @media screen and (min-width: 768px) {
       display: flex;
-     
-      
-      
     }
     
+    @media screen and (min-width: 1140px) {
+      display: inline-block;
+      margin-right: 70px;;
+     
   }
+}
   
   .footer-input {
     display: flex;
     flex-direction: column;
+    @media screen and (min-width: 1140px) {
+      margin-left: 93px;
+     
+  }
   }
   
   .footer-input__paragraph {
@@ -159,6 +173,14 @@
     color: var(--primary-fon-color);
     margin-bottom: 20px;
     justify-content: center;
+
+    @media screen and (min-width: 1140px) {
+      @include font($fs:14, $fw:700, $lh:16, $ls:0.03em);
+    text-transform: uppercase;
+    color: var(--primary-fon-color);
+    margin-bottom: 20px;
+     
+  }
   }
 
   .combination {
@@ -166,7 +188,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @media screen and (min-width: 1140px) {
+      display: flex;
   }
+  
 
   .input {
     
@@ -182,16 +208,10 @@
     }
 
     @media screen and (min-width: 768px) {
-      
       width: 450px;
-      
     }
-    @media screen and (min-width: 1200px) {
-      
-      
-      
-        
-      
+    @media screen and (min-width: 1140px) {
+      width: 358px; 
     }
     
   }
@@ -222,6 +242,8 @@
   form {
     display: flex;
     flex-direction: column;
+
+    
   }
 
   .fle {

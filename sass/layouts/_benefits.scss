@@ -18,7 +18,7 @@
       width: calc((100% - 60px)/ 2);
       
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1024px) {
       width: 270px;
       
       
@@ -46,7 +46,7 @@
     color: var(--primary-text-color);
     margin-bottom:var(--primary-padding-bottom) ;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1024px) {
       
       display: block;
       
