@@ -238,7 +238,7 @@ body {
 }
 
 .footer-input__button {
-  display: block;
+  display: flex;
   width: 200px;
   height: 50px;
   background-color: var(--acent-color);
