@@ -33,5 +33,18 @@
     & {
         margin-bottom: 20px;
       }  
+
+
+      @media screen and (min-width: 768px) {
+        display: inline-block;
+        align-items: flex-start;
+        padding-left: 39px;
+        
+        
+      }
+      @media screen and (min-width: 1200px) {
+        @include font($fs:26, $fw:700, $lh:31, $ls:0.03em);
+        margin-right: 93px;   
   }
+}
   
