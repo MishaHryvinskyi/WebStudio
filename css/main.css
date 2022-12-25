@@ -329,7 +329,6 @@ body {
 @media screen and (min-width: 768px) {
   .logo__footer {
     display: inline-block;
-    align-items: flex-start;
     padding-left: 39px;
   }
 }
@@ -941,6 +940,15 @@ body {
   margin-bottom: 9px;
 }
 
+@media screen and (min-width: 768px) {
+  .adress-div {
+    display: block;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-right: 165px;
+  }
+}
+
 .address {
   display: flex;
   justify-content: center;
@@ -949,8 +957,8 @@ body {
 }
 @media screen and (min-width: 768px) {
   .address {
-    display: flex;
-    justify-content: flex-start;
+    font-style: normal;
+    width: 231px;
   }
 }
 
@@ -977,8 +985,8 @@ body {
 }
 @media screen and (min-width: 768px) {
   .footer-social {
-    display: block;
-    align-items: baseline;
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -992,6 +1000,17 @@ body {
   text-transform: uppercase;
   margin-bottom: 20px;
   justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .footer-social__paragraph {
+    color: var(--secondary-fon-col);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.7142857143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
 }
 
 .footer-social__item {
@@ -1035,6 +1054,11 @@ body {
 .adress-div {
   display: block;
   justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .adress-div {
+    display: flex;
+  }
 }
 
 .footer-input {
@@ -1109,6 +1133,12 @@ input[placeholder] {
 form {
   display: flex;
   flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .fle {
+    display: flex;
+  }
 }
 
 .portfolio {

@@ -19,16 +19,22 @@
       
       padding-right: 15px;
       padding-left: 15px;
-      
-        
-      
     }
   }
-  
+
   .address__list > li:not(:last-child) {
     margin-bottom: 9px;  
   }
   
+
+  .adress-div {
+    @media screen and (min-width: 768px) {
+    display: block;
+    align-items:flex-start;
+    flex-direction: column;
+    margin-right: 165px;
+    }
+  }
   .address {
     display: flex;
     justify-content: center;
@@ -36,9 +42,8 @@
     margin-bottom: 60px;
     
     @media screen and (min-width: 768px) {
-      display: flex;
-      justify-content:flex-start;
-    
+      font-style: normal;
+     width: 231px; 
   }
 }
   .address-item {
@@ -65,10 +70,12 @@
     margin-bottom: 60px;
 
     @media screen and (min-width: 768px) {
-      display: block;
-      align-items: baseline;
+      display: flex;
+      flex-direction: column;
   }
+      
   }
+  
 
   .footer-social__paragraph {
     display: flex;
@@ -77,6 +84,12 @@
     text-transform: uppercase;
     margin-bottom: 20px;
     justify-content: center;
+    @media screen and (min-width: 768px) {
+      color:var(--secondary-fon-col);
+      @include font($fs:14, $fw:700, $lh:24, $ls:0.03em);
+      text-transform: uppercase;
+      margin-bottom: 20px;
+  }
   }
   
   .footer-social__item {
@@ -124,6 +137,12 @@
     display: block;
     justify-content: center;
     
+    @media screen and (min-width: 768px) {
+      display: flex;
+     
+      
+      
+    }
     
   }
   
@@ -202,4 +221,13 @@
   form {
     display: flex;
     flex-direction: column;
+  }
+
+  .fle {
+    @media screen and (min-width: 768px) {
+      
+      display: flex;
+    
+  }
+    
   }
