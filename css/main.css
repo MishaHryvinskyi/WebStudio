@@ -61,12 +61,21 @@ body {
 }
 
 .title {
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 700;
-  line-height: 1.1666666667;
+  line-height: 1.1785714286;
   letter-spacing: 0.03em;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1140px) {
+  .title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.1666666667;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+  }
 }
 
 .section {
@@ -244,10 +253,25 @@ body {
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
 }
 
 .logo {
@@ -529,20 +553,38 @@ body {
 }
 
 .team {
-  display: flex;
   justify-content: center;
 }
-.team .team__list:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .team {
+    width: 768px;
+    display: flex;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team {
+    width: calc((100% - 60px) / 2);
+    margin-left: -30px;
+    margin-right: -30px;
+  }
 }
 
 .team__list {
+  width: 100%;
+  height: auto;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--primary-fon-color);
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.team__list:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .team__picks {
+  width: 100%;
+  height: auto;
   margin-bottom: 30px;
 }
 
@@ -553,6 +595,14 @@ body {
   letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: var(--primary-padding-bottom);
+}
+@media screen and (min-width: 768px) {
+  .team__title {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.1875;
+    letter-spacing: 0.03em;
+  }
 }
 
 .team__paragraph {
