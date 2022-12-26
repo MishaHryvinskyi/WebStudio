@@ -1,23 +1,9 @@
 .logo {
     font-family: 'Raleway', 'sans-serif';
-    @include font($fs:24, $fw:700, $lh:28, $ls:0.03em);
+    @include font($fs:26, $fw:700, $lh:31, $ls:0.03em);
     text-decoration: none;
     color: var(--primary-text-color); 
-    padding: 16px  16px ;
-    
-
-    @media screen and (min-width: 768px) {
-      
-        
-        
-      }
-      @media screen and (min-width: 1200px) {
-        @include font($fs:26, $fw:700, $lh:31, $ls:0.03em);
-        margin-right: 93px;   
-        
-          
-        
-      }
+    margin-right: 93px;   
 }
 .logo-web {
     color: var(--acent-color)
@@ -25,26 +11,12 @@
 
 .logo__footer {
     font-family: 'Raleway', 'sans-serif';
-    @include font($fs:24, $fw:700, $lh:28, $ls:0.03em);
+    @include font($fs:26, $fw:700, $lh:31, $ls:0.03em);
     color: var(--primary-fon-color);
     text-decoration: none;
-    display: flex; 
-    justify-content: center;
+    display: inline-block; 
     & {
         margin-bottom: 20px;
       }  
-
-
-      @media screen and (min-width: 768px) {
-        display: inline-block;
-        padding-left: 39px;
-        
-        
-        
-      }
-      @media screen and (min-width: 1200px) {
-        @include font($fs:26, $fw:700, $lh:31, $ls:0.03em);
-        margin-right: 93px;   
   }
-}
   

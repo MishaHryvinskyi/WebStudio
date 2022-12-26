@@ -1,61 +1,15 @@
 .hero {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-  rgba(47, 48, 58, 0.4)),
-    url(../images/hero-mob.jpg);
-    @include retina {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-  rgba(47, 48, 58, 0.4)),
-    url(../images/hero-mob2x.jpg),
-    url(../images/hero-mob3x.jpg),
-    url(../images/hero-mob4x.jpg);
-    }
+    rgba(47, 48, 58, 0.4)),
+    url(../images/hero.jpg) ;
     background-repeat: no-repeat; 
     background-size: cover;
     background-color: var(--darc-fon-color); 
     text-align: center; 
-    padding: 0px;
-    max-width: 480px;
+    padding-top: 200px;
+    padding-bottom:200px;
+    max-width: 1600px;
     margin: 0 auto;
-    padding-bottom: 118px;
-    padding-top: 118px;
-    
-
-
-    @media screen and (min-width: 768px) {
-      background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)),
-      url(../images/hero-tablet.jpg) ;
-      @include retina {
-        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)),
-        url(../images/hero-tablet2x.jpg),
-        url(../images/hero-tablet3x.jpg),
-        url(../images/hero-tablet4x.jpg);
-        }
-      background-repeat: no-repeat; 
-      background-size: cover;
-      max-width: 768px;
-      padding-bottom: 118px;
-      padding-top: 118px;
-  }
-
-    @media screen and (min-width: 1024px) {
-      background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)),
-      url(../images/hero.jpg) ;
-      @include retina {
-        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)),
-        url(../images/hero2x.jpg),
-        url(../images/hero3x.jpg),
-        url(../images/hero4x.jpg);
-        }
-      background-repeat: no-repeat; 
-      background-size: cover;
-      max-width: 1600px;
-      padding-bottom: 200px;
-      padding-top: 200px;
-  }
   }
   
   .section .hero {
@@ -64,16 +18,10 @@
   
   .hero__title {
     color: var(--primary-fon-color);
-    max-width: 360px;
-    @include font($fs:26, $fw:900, $lh:42, $ls:0.06em);
+    max-width: 696px;
+    @include font($fs:44, $fw:900, $lh:60, $ls:0.06em);
     text-transform: uppercase;
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
-
-    @media screen and (min-width: 1024px) {
-      
-      @include font($fs:44, $fw:900, $lh:60, $ls:0.06em);
-      max-width: 696px;
   }
-}

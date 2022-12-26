@@ -1,9 +1,5 @@
   .nopadding {
     padding-top: 0px;
-    @media screen and (max-width: 1024px ) {
-      display: none;
-      
-    }
   }
   
   .section-work-title {
@@ -13,8 +9,7 @@
   }
   
   .list-work { 
-    display:flex;   
-    justify-content: center; 
+    display:flex;    
     & .item-do {
       margin-right: 30px;
     }

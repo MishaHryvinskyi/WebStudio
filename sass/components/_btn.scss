@@ -11,9 +11,9 @@
     display: inline-block;
     background: var(--acent-color);
     border-radius: 4px;
-    max-width: 200px;
+    max-width: 216px;
     max-height: 50px;
-    padding: 10px 24px;
+    padding: 10px 32px;
     transition-property: background-color, color ;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -26,18 +26,8 @@
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
       border-radius: 4px;
     } 
-    @media screen and (min-width: 1200px) {
-      max-width: 216px;
-      max-height: 50px;
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 1.87;
-      padding: 10px 32px;
-      
-  }
   }   
   
-
 // Portfolio-filter-buttons
 
 .buttons {
@@ -170,7 +160,8 @@
 // footer-buttons
 
   .footer-input__button {
-    display: flex;
+    @extend %flex-align;
+    justify-content: center;
     width: 200px;
     height: 50px;
     background-color: var(--acent-color);
@@ -183,6 +174,7 @@
     font-weight: 700;
     font-size: 16px;
     cursor: pointer;
+    margin-left: 12px;
     border: none;
     &:hover,
     &:focus {
