@@ -1,43 +1,70 @@
 .benefits {
-    display: flex; 
-    & .benefits__item:not(:last-child) {
-    margin-right: 30px;
-   }   
-  }
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  
+  margin-left: -30px;
+  margin-bottom: -30px;
+}
 
-  .benefits__item {
+.benefits__item {
+  width: 100%;
+  margin-bottom: 30px;
+  margin-left: 30px;
+
+  
+  @media screen and (min-width: 768px) {
+    
+    width: calc((100% - 60px)/ 2);
+    
+  }
+  @media screen and (min-width: 1024px) {
     width: 270px;
+    
+    
   }
+}
+
+.visually-hidden { 
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.benefits__title {
+  @include font($fs:14, $fw:700, $lh:16, $ls:0.03em);
+  text-transform: uppercase;
+  justify-content: center;
+  display: flex;
+  color: var(--primary-text-color);
+  margin-bottom:var(--primary-padding-bottom) ;
+
+  @media screen and (min-width: 1024px) {
+    
+    display: block;
+    
+  }
+}
+.benefits__paragraph {
+  color: var(--secondary-texy-color);
+  margin-bottom: 30px;
+  @include font($fs:14, $fw:400, $lh:24, $ls:0.03em);
+}
+
+.privileges-item {
+  @extend %flex-align;
+  justify-content: center;
+  margin-bottom: 30px;
+  width: 100%;
+  height: 120px;
+  background: var(--secondary-fon-col);
+  border-radius: 4px;
   
-  .visually-hidden { 
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
-  
-  .benefits__title {
-    @include font($fs:14, $fw:700, $lh:16, $ls:0.03em);
-    text-transform: uppercase;
-    color: var(--primary-text-color);
-    margin-bottom:var(--primary-padding-bottom) ;
-  }
-  .benefits__paragraph {
-    color: var(--secondary-texy-color);
-  }
-  
-  .privileges-item {
-    @extend %flex-align;
-    justify-content: center;
-    margin-bottom: 30px;
-    width: 270px;
-    height: 120px;
-    background: var(--secondary-fon-col);
-    border-radius: 4px;
-  }  
+}  

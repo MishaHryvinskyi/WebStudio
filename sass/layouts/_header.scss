@@ -1,4 +1,5 @@
 
+
 .header {
     background-color: var(--primary-fon-color);
     border-bottom: 1px solid var(--header-border-color); 
@@ -11,6 +12,7 @@
 
 .navigation {
     margin-right: auto;
+    display: none;
 
     &__list {
         color: var(--primary-text-color);
@@ -37,9 +39,10 @@
 }
 
 .header-link {
-    display: block;
+    display: inline-block;
     padding-top: 32px;
     padding-bottom: 32px;
+    padding-left: 40px;
     @include font($fs:14, $fw:500, $lh:16, $ls:0.02em);
     transition-property: background-color,color ;
     transition-duration: 250ms;
@@ -47,14 +50,14 @@
     text-decoration: none;
 
     & {
-        display: flex;
+        
         align-items: center;
         justify-content: center;
     }
 }
 
 .authentication {
-    display: flex;
+    display: none;
 
     & .header-link,
     &  {
@@ -124,4 +127,104 @@
 {
     display: inline-block;
 }
+}
+
+// mobile-menu
+.mobil-menu {
+    position: relative;
+    display: block;
+    background-color: var(--primary-fon-color);
+    width: 100wv;
+    height: 100wh;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 48px 0px ;
+    
+}
+.menu-open {
+    margin-left: auto;
+}
+
+.mob-navigation__list {
+    display: block;
+    
+}
+
+.mob-navigation__item {
+    list-style: none;
+    display: block;
+    padding-left: 25px;
+}
+
+.mobile-close-menu {
+    border: none;
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+}
+.icon-close-mobile {
+    width: 18px;
+    height: 18px;   
+}
+
+.mob-navigation {
+    display: block;
+    margin-bottom: 308px;
+    &__item {
+        margin-bottom: 32px;
+    }
+}
+
+.header-link-mobile {
+    color: var(--primary-text-color);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    @include font($fs:40, $fw:500, $lh:47, $ls:0.02em);
+    transition-property: background-color,color ;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+    text-decoration: none;
+    list-style: none;
+    
+    
+
+    & {
+        
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+.mob-authentication__item {
+    margin-bottom: 32px;
+    list-style: none;
+}
+
+.menu-contacts {
+    color: var(--secondary-texy-color);
+    
+}
+
+.header-link-mobile:active {
+    color: var(--acent-color);
+}
+
+.mob-cocial-list {
+    display: flex;
+    list-style: none;
+}
+
+.mob-cocial__list > a {
+    padding: 10px;
+    text-align: center;
+    color: var(--acent-color);
+    @include font($fs:18, $fw:500, $lh:22, $ls:0.02em);
+    
+}
+
+.link {
+    text-decoration: none;
+    
 }
