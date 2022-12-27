@@ -3,14 +3,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 5px;
+    margin: -15px;
   }
 
   .client__item {
-    width: calc(100% - 2 * 15px / 2);
+    width: calc((100% - 60px)/ 2);
     height: auto;
-    margin-right: 30px;
-    margin-bottom: 30px;
+    margin: 15px;
+    
     
   
 
