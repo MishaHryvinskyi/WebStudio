@@ -15,28 +15,15 @@
       padding-left: 89px;
       
     }
-    @media screen and (min-width: 1140px) {
-      
-      padding-right: 15px;
-      padding-left: 15px;
-      display: flex;
-      flex-wrap: wrap;
-    }
-  }
+    
+  
 
   .address__list > li:not(:last-child) {
     margin-bottom: 9px;  
   }
   
 
-  .adress-div {
-    @media screen and (min-width: 768px) {
-    display: block;
-    align-items:flex-start;
-    flex-direction: column;
-    margin-right: 165px;
-    }
-  }
+  
   .address {
     display: flex;
     justify-content: center;
@@ -44,15 +31,10 @@
     margin-bottom: 30px;
     
     
-    @media screen and (min-width: 768px) {
-      font-style: normal;
-     width: 231px; 
-  }
+   
 
-  @media screen and (min-width: 1140px) {
-    font-style: normal;
-    width: 231px;  
-}
+  
+
 }
   .address-item {
     color: var(--primary-fon-color);
@@ -74,15 +56,7 @@
   }
   
   }
-  .footer-social {
-    
-
-    @media screen and (min-width: 768px) {
-      display: flex;
-      flex-direction: column;
-  }
-      
-  }
+  
   
 
   .footer-social__paragraph {
@@ -93,7 +67,6 @@
     margin-bottom: 20px;
     justify-content: center;
     @media screen and (min-width: 768px) {
-      color:var(--secondary-fon-col);
       @include font($fs:14, $fw:700, $lh:24, $ls:0.03em);
       text-transform: uppercase;
       margin-bottom: 20px;
@@ -146,24 +119,15 @@
     display: block;
     justify-content: center;
     
-    @media screen and (min-width: 768px) {
-      display: flex;
-    }
     
-    @media screen and (min-width: 1140px) {
-      display: inline-block;
-      margin-right: 70px;;
-     
-  }
+    
+    
 }
   
   .footer-input {
-    display: flex;
-    flex-direction: column;
-    @media screen and (min-width: 1140px) {
-      margin-left: 93px;
-     
-  }
+   display: block;
+   justify-content: center;
+    
   }
   
   .footer-input__paragraph {
@@ -174,13 +138,7 @@
     margin-bottom: 20px;
     justify-content: center;
 
-    @media screen and (min-width: 1140px) {
-      @include font($fs:14, $fw:700, $lh:16, $ls:0.03em);
-    text-transform: uppercase;
-    color: var(--primary-fon-color);
-    margin-bottom: 20px;
-     
-  }
+    
   }
 
   .combination {
@@ -192,6 +150,7 @@
     @media screen and (min-width: 1140px) {
       display: flex;
   }
+}
   
 
   .input {
@@ -210,7 +169,7 @@
     @media screen and (min-width: 768px) {
       width: 450px;
     }
-    @media screen and (min-width: 1140px) {
+    @media screen and (min-width: 1200px) {
       width: 358px; 
     }
     
@@ -238,20 +197,5 @@
     @include font($fs:16, $fw:700, $lh:30, $ls:0.06em);
     text-align: center;
   }
-  
-  form {
-    display: flex;
-    flex-direction: column;
 
-    
-  }
 
-  .fle {
-    @media screen and (min-width: 768px) {
-      
-      display: flex;
-      margin-bottom: 60px;
-    
-  }
-    
-  }
