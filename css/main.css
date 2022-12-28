@@ -481,6 +481,15 @@ body {
   margin-left: auto;
   margin-right: 0;
 }
+.mobile-close-menu .icon-cross {
+  display: none;
+}
+.mobile-close-menu.is-open .icon-cross {
+  display: block;
+}
+.mobile-close-menu.is-open .icon-menu {
+  display: none;
+}
 
 .icon-close-mobile {
   width: 18px;
@@ -796,7 +805,7 @@ body {
 @media screen and (min-width: 1200px) {
   .team__list {
     width: 270px;
-    height: auto;
+    height: 428px;
   }
 }
 

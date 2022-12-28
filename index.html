@@ -52,11 +52,12 @@
         </div>
         <div class="container">
         <div class="mobil-menu">
-            <button type="button" class="mobile-close-menu">
-                <svg class="icon-close-mobile"
+            <button type="button" class="mobile-close-menu is-open js-menu-container" 
+            js-menu-container>
+                <svg class="icon-close-mobile "
                 aria-label="Перемикач мобільного меню">
-                    <use class="icon-cross" href="./images/icons.svg#icon-char"></use>
-                    <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+                    <use class="icon-cross .js-open-menu" href="./images/icons.svg#icon-char"></use>
+                    <use class="icon-menu .js-close-menu" href="./images/icons.svg#icon-menu"></use>
                 </svg>
             </button>
             <nav class="mob-navigation">
@@ -553,7 +554,8 @@
                         </button>
                 </div>
             </div>  
-            
+            <script src="./js/mobail-menu.js"></script>
+
             <script src="./js/modal.js"></script> 
 </body>
 </html>
