@@ -52,8 +52,8 @@
         </div>
         <div class="container">
         <div class="mobil-menu">
-            <button type="button" class="mobile-close-menu is-open js-menu-container" 
-            js-menu-container>
+            <button type="button" class="mobile-close-menu js-open-menu" 
+            aria-expanded="false" aria-controls="mobil-menu__list">
                 <svg class="icon-close-mobile "
                 aria-label="Перемикач мобільного меню">
                     <use class="icon-cross .js-open-menu" href="./images/icons.svg#icon-char"></use>
@@ -61,7 +61,7 @@
                 </svg>
             </button>
             <nav class="mob-navigation">
-                <ul class="mob-navigation__list">
+                <ul class="mobil-menu__list">
                     <li class="mob-navigation__item ">
                        <a href="./index.html" class="header-link-mobile link ">Студія</a> 
                     </li>

@@ -171,11 +171,11 @@
         display: none;  
     }
 
-    &.is-open .icon-cross {
+    &.js-menu-container .icon-cross {
         display: block;
     }
 
-    &.is-open .icon-menu {
+    &.js-menu-container .icon-menu {
         display: none;
     }
 }
