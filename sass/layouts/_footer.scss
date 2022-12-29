@@ -10,23 +10,26 @@
   }
 
   .footer-item {
-    display: flex;
-  flex-direction: column;
   justify-content: center;
-    @media screen and (min-width: 768px) {
-      
-      
-      
+    @media screen and (min-width: 1200px) {
+      display: flex;
     }
+
+
   }
     
   
 .footer__position {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-bottom:0px;
   }
 }
 
@@ -70,6 +73,10 @@
     &:focus {
     color: var(--acent-color);
   }
+
+  @media screen and (min-width: 1200px) {
+    justify-content:left;
+  }
   
   }
   
@@ -86,12 +93,20 @@
       @include font($fs:14, $fw:700, $lh:24, $ls:0.03em);
       text-transform: uppercase;
       margin-bottom: 20px;
+
+      @media screen and (min-width: 1200px) {
+        justify-content:left;
+      }
   }
   
   }
   
 .footer-social {
   margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+  }
 }
 
   .footer-social__item {
@@ -137,6 +152,9 @@
     margin-bottom: 20px;
     justify-content: center;
 
+    @media screen and (min-width: 1200px) {
+      justify-content:left;
+    }
     
   }
 
@@ -145,6 +163,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+   
+    @media screen and (min-width: 1200px){
+      display: flex;
+      justify-content: center;
+      flex-direction:row;
+      align-items:inherit;
+      
+    }
 
    
 }
@@ -168,10 +195,17 @@
     }
     @media screen and (min-width: 1200px) {
       width: 358px; 
+      margin-bottom: 0px;
     }
     
   }
   
+  .footer-input {
+    @media screen and (min-width: 1200px) {
+      margin-left: auto;
+    }
+  }
+
   .footer-social__list {
     display: flex;
     justify-content: center;
@@ -181,6 +215,7 @@
     @include font($fs:16, $fw:null, $lh:20, $ls:0.03em);
     padding: 15px 16px;
     color: var(--secondary-texy-color);
+
   }
   
   .footer-input__icon-svg {

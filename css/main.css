@@ -267,6 +267,11 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 1200px) {
+  .footer-input__button {
+    margin-left: 12px;
+  }
+}
 
 .container {
   width: 100%;
@@ -275,12 +280,12 @@ body {
 }
 @media screen and (min-width: 768px) {
   .container .container {
-    width: 738px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container .container {
-    width: 1170px;
+    width: 1200px;
   }
 }
 
@@ -334,7 +339,8 @@ body {
     font-weight: 700;
     line-height: 1.1923076923;
     letter-spacing: 0.03em;
-    margin-right: 93px;
+    align-items: flex-start;
+    padding-left: 0px;
   }
 }
 
@@ -945,16 +951,26 @@ body {
 }
 
 .footer-item {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
+  .footer-item {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .footer__position {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__position {
+    display: flex;
+    margin-bottom: 0px;
   }
 }
 
@@ -990,6 +1006,11 @@ body {
 .address__items:hover, .address__items:focus {
   color: var(--acent-color);
 }
+@media screen and (min-width: 1200px) {
+  .address__items {
+    justify-content: left;
+  }
+}
 
 .footer-social__paragraph {
   display: flex;
@@ -1012,9 +1033,19 @@ body {
     margin-bottom: 20px;
   }
 }
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .footer-social__paragraph {
+    justify-content: left;
+  }
+}
 
 .footer-social {
   margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-social {
+    margin-left: 70px;
+  }
 }
 
 .footer-social__item {
@@ -1057,12 +1088,25 @@ body {
   margin-bottom: 20px;
   justify-content: center;
 }
+@media screen and (min-width: 1200px) {
+  .footer-input__paragraph {
+    justify-content: left;
+  }
+}
 
 .combination {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .combination {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: inherit;
+  }
 }
 
 .input {
@@ -1085,6 +1129,13 @@ body {
 @media screen and (min-width: 1200px) {
   .input {
     width: 358px;
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-input {
+    margin-left: auto;
   }
 }
 
