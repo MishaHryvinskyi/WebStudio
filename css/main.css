@@ -950,17 +950,11 @@ body {
   justify-content: center;
 }
 @media screen and (min-width: 768px) {
-  .footer-item {
-    padding-right: 76px;
-    padding-left: 89px;
-  }
-}
-
-@media screen and (min-width: 768px) {
   .footer__position {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-bottom: 60px;
   }
 }
 
@@ -972,6 +966,11 @@ body {
   justify-content: center;
   font-style: normal;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .address {
+    margin-bottom: 0px;
+  }
 }
 
 .address-item {
