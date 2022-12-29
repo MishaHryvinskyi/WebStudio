@@ -817,8 +817,8 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  .team__list:not(:last-child) {
-    margin-right: 30px;
+  .team__list {
+    margin: 15px;
   }
 }
 
@@ -953,7 +953,7 @@ body {
 .footer-item {
   justify-content: center;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1170px) {
   .footer-item {
     display: flex;
   }
@@ -967,7 +967,7 @@ body {
     margin-bottom: 60px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1170px) {
   .footer__position {
     display: flex;
     margin-bottom: 0px;
@@ -1006,7 +1006,7 @@ body {
 .address__items:hover, .address__items:focus {
   color: var(--acent-color);
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1170px) {
   .address__items {
     justify-content: left;
   }
@@ -1029,7 +1029,7 @@ body {
     margin-bottom: 20px;
   }
 }
-@media screen and (min-width: 768px) and (min-width: 1200px) {
+@media screen and (min-width: 768px) and (min-width: 1170px) {
   .footer-social__paragraph {
     justify-content: left;
   }
@@ -1038,7 +1038,7 @@ body {
 .footer-social {
   margin-bottom: 60px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1170px) {
   .footer-social {
     margin-left: 70px;
   }
@@ -1084,7 +1084,7 @@ body {
   margin-bottom: 20px;
   justify-content: center;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1170px) {
   .footer-input__paragraph {
     justify-content: left;
   }
@@ -1096,7 +1096,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1170px) {
   .combination {
     display: flex;
     justify-content: center;
@@ -1122,14 +1122,14 @@ body {
     width: 450px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1170px) {
   .input {
     width: 358px;
     margin-bottom: 0px;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1170px) {
   .footer-input {
     margin-left: auto;
   }
