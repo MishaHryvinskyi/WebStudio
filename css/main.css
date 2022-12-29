@@ -432,6 +432,11 @@ body {
 .authentication .header-link, .authentication {
   color: var(--secondary-texy-color);
 }
+@media screen and (min-width: 768px) {
+  .authentication .header-link, .authentication {
+    padding: 0px;
+  }
+}
 .authentication .header-link:hover, .authentication .header-link:focus {
   color: var(--acent-color);
   fill: var(--acent-color);
@@ -440,8 +445,10 @@ body {
   margin-right: 10px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.authentication__item + .authentication__item {
-  margin-left: 30px;
+@media screen and (min-width: 1200px) {
+  .authentication__item + .authentication__item {
+    margin-left: 30px;
+  }
 }
 
 .current::after {
