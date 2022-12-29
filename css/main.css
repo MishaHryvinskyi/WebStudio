@@ -299,6 +299,12 @@ body {
   color: var(--primary-text-color);
   padding: 16px 16px;
 }
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 88px;
+    padding: 26px 0px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .logo {
     font-size: 26px;
@@ -357,6 +363,11 @@ body {
   margin-right: auto;
   display: none;
 }
+@media screen and (min-width: 768px) {
+  .navigation {
+    display: flex;
+  }
+}
 .navigation__list {
   color: var(--primary-text-color);
   display: flex;
@@ -378,7 +389,6 @@ body {
   display: inline-block;
   padding-top: 32px;
   padding-bottom: 32px;
-  padding-left: 40px;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.1428571429;
@@ -388,6 +398,17 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   text-decoration: none;
 }
+@media screen and (max-width: 768px) {
+  .header-link {
+    padding: 0px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header-link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
 .header-link {
   align-items: center;
   justify-content: center;
@@ -395,6 +416,18 @@ body {
 
 .authentication {
   display: none;
+}
+@media screen and (min-width: 768px) {
+  .authentication {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .authentication {
+    display: flex;
+    flex-direction: row;
+  }
 }
 .authentication .header-link, .authentication {
   color: var(--secondary-texy-color);
@@ -491,6 +524,11 @@ body {
 }
 .mobile-close-menu.js-menu-container .icon-menu {
   display: none;
+}
+@media screen and (min-width: 768px) {
+  .mobile-close-menu {
+    display: none;
+  }
 }
 
 .icon-close-mobile {
