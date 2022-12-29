@@ -22,6 +22,14 @@
   }
     
   
+.footer__position {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
 
   .address__list > li:not(:last-child) {
     margin-bottom: 9px;  
@@ -153,7 +161,7 @@
     }
 
     @media screen and (min-width: 768px) {
-      width: 768px;
+      width: 450px;
     }
     @media screen and (min-width: 1200px) {
       width: 358px; 
