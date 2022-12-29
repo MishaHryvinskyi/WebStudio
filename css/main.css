@@ -42,6 +42,7 @@ h1, h2, h3, h4, h5, h6, p {
 .list-work,
 .address__list,
 .client,
+.footer-social__item,
 .footer-list {
   list-style: none;
 }
@@ -271,11 +272,6 @@ body {
   width: 100%;
   padding: 0px 15px;
   margin: 0 auto;
-}
-@media screen and (min-width: 480px) {
-  .container .container {
-    width: 450px;
-  }
 }
 @media screen and (min-width: 768px) {
   .container .container {
@@ -638,6 +634,9 @@ body {
 
 .benefits__item {
   width: 100%;
+  height: auto;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 @media screen and (max-width: 767px) {
   .benefits__item:not(:last-child) {
@@ -945,6 +944,11 @@ body {
   margin-bottom: 20px;
 }
 
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 @media screen and (min-width: 768px) {
   .footer-item {
     padding-right: 76px;
@@ -957,7 +961,6 @@ body {
 }
 
 .address {
-  display: flex;
   justify-content: center;
   font-style: normal;
   margin-bottom: 30px;
@@ -1003,10 +1006,11 @@ body {
   }
 }
 
+.footer-social {
+  margin-bottom: 60px;
+}
+
 .footer-social__item {
-  display: inline-flex;
-  justify-content: center;
-  align-content: center;
   width: 44px;
   height: 44px;
   fill: var(--primary-fon-color);
@@ -1033,22 +1037,6 @@ body {
 
 .footer-social__item:not(:last-child) {
   margin-right: 10px;
-}
-
-.footer-item {
-  align-items: baseline;
-  display: flex;
-  justify-content: space-between;
-}
-
-.adress-div {
-  display: block;
-  justify-content: center;
-}
-
-.footer-input {
-  display: block;
-  justify-content: center;
 }
 
 .footer-input__paragraph {
@@ -1084,7 +1072,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .input {
-    width: 450px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
