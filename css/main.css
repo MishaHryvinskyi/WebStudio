@@ -517,23 +517,23 @@ body {
   padding-left: 25px;
 }
 
-.mobile-close-menu {
+.js-open-menu {
   border: none;
   display: block;
   margin-left: auto;
   margin-right: 0;
 }
-.mobile-close-menu .icon-cross {
+.js-open-menu .icon-cross {
   display: none;
 }
-.mobile-close-menu.js-menu-container .icon-cross {
+.js-open-menu.js-menu-container .icon-cross {
   display: block;
 }
-.mobile-close-menu.js-menu-container .icon-menu {
+.js-open-menu.js-menu-container .icon-menu {
   display: none;
 }
 @media screen and (min-width: 768px) {
-  .mobile-close-menu {
+  .js-open-menu {
     display: none;
   }
 }
