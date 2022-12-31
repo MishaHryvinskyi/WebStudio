@@ -48,27 +48,31 @@
                      </svg>+38 096 111 11 11</a>
                 </li>
             </ul>
-            <button type="button" class="mobile-close-menu js-open-menu" 
-            aria-expanded="false" aria-controls="mobil-menu__list">
-                <svg class="icon-close-mobile "
+
+
+            <button type="button" class="menu-toggle js-open-menu" 
+            aria-expanded="false" aria-controls="mobil-menu">
+                <svg class="icon-close-mobile"
                 aria-label="Перемикач мобільного меню">
                     <use class="icon-cross js-open-menu" href="./images/icons.svg#icon-char"></use>
                     <use class="icon-menu js-close-menu" href="./images/icons.svg#icon-menu"></use>
                 </svg>
             </button>
         </div>
+
+
          <div class="container">
-        <div class="mobil-menu">
-            <button type="button" class="mobile-close-menu js-open-menu" 
-            aria-expanded="false" aria-controls="mobil-menu__list">
+        <div class="mobil-menu js-menu-container" id="mobile-menu">
+            <button type="button" class="menu-toggle js-close-menu" 
+            aria-expanded="false" aria-controls="mobil-menu">
                 <svg class="icon-close-mobile "
                 aria-label="Перемикач мобільного меню">
                     <use class="icon-cross .js-open-menu" href="./images/icons.svg#icon-char"></use>
                     <use class="icon-menu .js-close-menu" href="./images/icons.svg#icon-menu"></use>
                 </svg>
             </button>
-            <nav class="mob-navigation">
-                <ul class="mobil-menu__list">
+
+                <ul class="mobil-menu">
                     <li class="mob-navigation__item ">
                        <a href="./index.html" class="header-link-mobile link ">Студія</a> 
                     </li>
@@ -79,7 +83,6 @@
                         <a href="" class="header-link-mobile link ">Контакти</a>
                     </li>
                 </ul>
-            </nav>
             <ul class="mob-authentication">
                 <li class="mob-authentication__item">
                     <a href="mailto:info@devstudio.com" class="header-link-mobile menu-contacts">info@devstudio.com</a>
