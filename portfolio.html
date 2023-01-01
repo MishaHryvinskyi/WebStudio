@@ -44,7 +44,72 @@
                          </svg>+38 096 111 11 11</a>
                     </li>
                 </ul>
-            </div>
+            
+
+            <button type="button" 
+            class="menu-toggle js-open-menu  is-open" 
+            aria-expanded="false"
+            aria-controls="mobil-menu">
+                <svg class="icon-close-mobile"
+                aria-label="Перемикач мобільного меню">
+                    
+                    <use class="icon-menu " href="./images/icons.svg#icon-menu"></use>
+                </svg>
+            </button>
+        </div>
+
+
+         <div class="container ">
+        <div class="mobil-menu js-menu-container is-open" id="mobile-menu">
+            <button type="button" 
+            class="menu-toggle js-close-menu " 
+            aria-expanded="false"
+            aria-controls="mobil-menu">
+                <svg class="icon-close-mobile"
+                aria-label="Перемикач мобільного меню">
+                    <use class="icon-cross " href="./images/icons.svg#icon-char"></use>
+                    
+                </svg>
+            </button>
+
+                <ul class="mob-navigation">
+                    <li class="mob-navigation__item ">
+                       <a href="./index.html" class="header-link-mobile link ">Студія</a> 
+                    </li>
+                    <li class="mob-navigation__item">
+                        <a href="./portfolio.html" class="header-link-mobile link  ">Портфоліо</a>
+                    </li>
+                    <li class="mob-navigation__item">
+                        <a href="" class="header-link-mobile link ">Контакти</a>
+                    </li>
+                </ul>
+            <ul class="mob-authentication">
+                <li class="mob-authentication__item">
+                    <a href="mailto:info@devstudio.com" class="header-link-mobile menu-contacts">info@devstudio.com</a>
+                </li>
+                <li class="mob-authentication__item">
+                    <a href="tel:+380961111111" class="header-link-mobile menu-contacts">+38 096 111 11 11</a>
+                </li>
+            </ul>
+            <ul class="mob-cocial-list">
+                <li class="mob-cocial__list">
+                     <a class="link" href="">Instagram</a>
+                </li>
+                
+                <li class="mob-cocial__list">
+                    <a class="link" href="">Twitter</a>
+                </li>
+                
+                <li class="mob-cocial__list">
+                    <a class="link" href="">Facebook</a>
+                </li>
+                
+                <li class="mob-cocial__list">
+                    <a class="link" href="">LinkedIn</a>
+                </li>
+            </ul>
+        </div>
+        </div> 
             </header>
     
     <main>  
@@ -250,7 +315,7 @@
         <!--Підвал-->
         <footer class="footer">
             <div class="container footer-item">
-                <div class="fle">
+                <div class="footer__position">
             <div class="adress-div">
                 <a href="./index.html" class="logo__footer"><span class="logo-web">Web</span>Studio</a>
                 <address class="address">
@@ -302,26 +367,28 @@
                 </div>
             </div>
             <div class="footer-input">
-                <form action="">
-                    <p class="footer-input__paragraph">Підпишіться на розсилку</p>
-                    <div class="combination">
-                        <input class="input"
-                        type="email"
-                        name="mail"
-                        id="mail"
-                        placeholder="E-mail">
-                    <button class="footer-input__button" type="submit">
-                        <span class="footer-input__span">
-                        Підписатися
-                    </span>
-                    <svg class="footer-input__icon-svg">
-                        <use href="./images/icons.svg#icon-icon-send"></use>
-                    </svg>
-                    </button>
-                    </div>
-                    </form>
+                <form  action="">
+                <p class="footer-input__paragraph">Підпишіться на розсилку</p>
+                <div class="combination">
+                    <input class="input"
+                    type="email"
+                    name="mail"
+                    id="mail"
+                    placeholder="E-mail">
+                <button class="footer-input__button" type="submit">
+                    <span class="footer-input__span">
+                    Підписатися
+                </span>
+                <svg class="footer-input__icon-svg">
+                    <use href="./images/icons.svg#icon-icon-send"></use>
+                </svg>
+                </button>
+                </div>
+                </form>
             </div>
         </div>
-            </footer>
+            </footer> 
+            <script src="./js/mobail-menu.js"></script>
+            
     </body>
 </html>
