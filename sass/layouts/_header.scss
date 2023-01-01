@@ -206,7 +206,12 @@
         display: none;
     }
 }
-
+.js-close-menu {
+    border: none;
+    display: inline-flex;
+    margin-left: 0;
+    margin-right: auto;
+}
 
 .icon-close-mobile {
     width: 18px;
@@ -288,8 +293,8 @@
     width: 100vw;
     height: 100vh;
     padding: 32px;
-    
     z-index: 999;
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
+    
 }

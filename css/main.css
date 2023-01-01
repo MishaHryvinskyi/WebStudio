@@ -529,6 +529,13 @@ body {
   }
 }
 
+.js-close-menu {
+  border: none;
+  display: inline-flex;
+  margin-left: 0;
+  margin-right: auto;
+}
+
 .icon-close-mobile {
   width: 18px;
   height: 18px;
