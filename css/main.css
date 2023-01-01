@@ -517,23 +517,24 @@ body {
   padding-left: 25px;
 }
 
-.js-open-menu {
+.menu-toggle {
   border: none;
   display: inline-flex;
   margin-left: auto;
   margin-right: 0;
+  background-color: transparent;
 }
 @media screen and (min-width: 768px) {
-  .js-open-menu {
+  .menu-toggle {
     display: none;
   }
 }
 
-.js-close-menu {
+.menu-toggle {
   border: none;
   display: inline-flex;
-  margin-left: 0;
-  margin-right: auto;
+  margin-left: auto;
+  margin-right: 0;
 }
 
 .icon-close-mobile {
@@ -616,6 +617,13 @@ body {
   z-index: 999;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
+}
+
+.mobil-menu .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #fff;
 }
 
 .hero {
