@@ -56,7 +56,7 @@
             aria-controls="mobil-menu">
                 <svg class="icon-close-mobile"
                 aria-label="Перемикач мобільного меню">
-                    <use class="icon-cross " href="./images/icons.svg#icon-char"></use>
+                    
                     <use class="icon-menu " href="./images/icons.svg#icon-menu"></use>
                 </svg>
             </button>
@@ -64,8 +64,17 @@
 
 
          <div class="container ">
-        <div class="mobil-menu js-menu-container" id="mobile-menu">
-            
+        <div class="mobil-menu js-menu-container is-open" id="mobile-menu">
+            <button type="button" 
+            class="menu-toggle js-close-menu " 
+            aria-expanded="false"
+            aria-controls="mobil-menu">
+                <svg class="icon-close-mobile"
+                aria-label="Перемикач мобільного меню">
+                    <use class="icon-cross " href="./images/icons.svg#icon-char"></use>
+                    
+                </svg>
+            </button>
 
                 <ul class="mob-navigation">
                     <li class="mob-navigation__item ">
