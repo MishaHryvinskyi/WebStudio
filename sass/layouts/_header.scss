@@ -196,22 +196,17 @@
 
 .menu-toggle {
     border: none;
-    display: inline-flex;
+    
     margin-left: auto;
     margin-right: 0;
-     background-color: transparent;
+    //  background-color: transparent;
 
    
     @media screen and (min-width: 768px) {
         display: none;
     }
 }
-.menu-toggle {
-    border: none;
-    display: inline-flex;
-    margin-left: auto;
-    margin-right: 0;
-}
+
 
 .icon-close-mobile {
     width: 18px;
@@ -287,6 +282,7 @@
 }
 
 .mobil-menu {
+    
     position: fixed;
     top: 0;
     left: 0;
@@ -296,7 +292,13 @@
     z-index: 999;
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
-    
+    @media screen and (min-width:480px) {
+        width: 480px;
+    }
+
+    @media screen and (min-width:481px) {
+        display: none;
+    }
 }
 .mobil-menu .menu-toggle {
     position: absolute;

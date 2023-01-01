@@ -519,22 +519,13 @@ body {
 
 .menu-toggle {
   border: none;
-  display: inline-flex;
   margin-left: auto;
   margin-right: 0;
-  background-color: transparent;
 }
 @media screen and (min-width: 768px) {
   .menu-toggle {
     display: none;
   }
-}
-
-.menu-toggle {
-  border: none;
-  display: inline-flex;
-  margin-left: auto;
-  margin-right: 0;
 }
 
 .icon-close-mobile {
@@ -617,6 +608,16 @@ body {
   z-index: 999;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
+}
+@media screen and (min-width: 480px) {
+  .mobil-menu {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 481px) {
+  .mobil-menu {
+    display: none;
+  }
 }
 
 .mobil-menu .menu-toggle {
