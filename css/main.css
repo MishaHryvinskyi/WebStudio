@@ -1334,8 +1334,7 @@ input[placeholder] {
 }
 @media screen and (min-width: 480px) and (max-width: 768px) {
   .modal {
-    width: 95% px;
-    height: 609px;
+    width: 95%;
   }
 }
 
