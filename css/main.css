@@ -526,10 +526,10 @@ body {
 .js-open-menu .icon-cross {
   display: none;
 }
-.js-open-menu.js-menu-container .icon-cross {
+.js-open-menu.is-open .icon-cross {
   display: block;
 }
-.js-open-menu.js-menu-container .icon-menu {
+.js-open-menu.is-open .icon-menu {
   display: none;
 }
 @media screen and (min-width: 768px) {
@@ -573,6 +573,7 @@ body {
 .mob-authentication__item {
   margin-bottom: 32px;
   list-style: none;
+  padding-left: 25px;
 }
 
 .menu-contacts {
@@ -586,6 +587,7 @@ body {
 .mob-cocial-list {
   display: flex;
   list-style: none;
+  padding-left: 25px;
 }
 
 .mob-cocial__list > a {

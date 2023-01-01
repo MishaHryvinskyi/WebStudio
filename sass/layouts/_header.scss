@@ -199,16 +199,17 @@
     display: block;
     margin-left: auto;
     margin-right: 0;
+    // background-color: transparent;
 
     & .icon-cross {
         display: none;  
     }
 
-    &.js-menu-container .icon-cross {
+    &.is-open .icon-cross {
         display: block;
     }
 
-    &.js-menu-container .icon-menu {
+    &.is-open .icon-menu {
         display: none;
     }
 
@@ -253,6 +254,7 @@
 .mob-authentication__item {
     margin-bottom: 32px;
     list-style: none;
+    padding-left: 25px;
 }
 
 .menu-contacts {
@@ -267,6 +269,7 @@
 .mob-cocial-list {
     display: flex;
     list-style: none;
+    padding-left: 25px;
 }
 
 .mob-cocial__list > a {
