@@ -196,27 +196,21 @@
 
 .js-open-menu {
     border: none;
-    display: block;
+    display: inline-flex;
     margin-left: auto;
     margin-right: 0;
     // background-color: transparent;
 
-    & .icon-cross {
-        display: none;  
-    }
-
-    &.is-open .icon-cross {
-        display: block;
-    }
-
-    &.is-open .icon-cross{
-        display: none;
-    }
-
+   
     @media screen and (min-width: 768px) {
         display: none;
     }
 }
+
+.js-open-menu .icon-cross {
+    display: none;
+}
+
 .icon-close-mobile {
     width: 18px;
     height: 18px;   
