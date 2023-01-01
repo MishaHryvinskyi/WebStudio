@@ -529,7 +529,7 @@ body {
 .js-open-menu.is-open .icon-cross {
   display: block;
 }
-.js-open-menu.is-open .icon-menu {
+.js-open-menu.is-open .icon-cross {
   display: none;
 }
 @media screen and (min-width: 768px) {
