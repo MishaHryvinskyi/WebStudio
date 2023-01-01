@@ -2,8 +2,8 @@
 .portfolio {
   display: flex;
   flex-wrap: wrap;  
-  margin-bottom: -30px;
-  margin-right: -30px;
+  margin: -15px;
+  
   justify-content: center;
      
 }
@@ -11,18 +11,20 @@
 .portfolio__list {
   width: 100%;
   height: auto;
-  margin-right: 30px;
-  margin-bottom: 30px;
+ 
+  margin: 15px;
   align-items: center;
  
   @media screen and (min-width: 768px) {
     
     width: calc((100% - 60px)/ 2);
-    
+    margin: 15px;
+  
   }
 
   @media screen and (min-width: 1200px) {
-    width: 354px;
+    width: 370px;
+    height: 404px;
     margin: 15px;
     }
     }
