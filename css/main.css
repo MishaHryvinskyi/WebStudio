@@ -312,7 +312,7 @@ body {
   letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--primary-text-color);
-  padding: 16px 16px;
+  padding: 16px 0;
 }
 @media screen and (min-width: 768px) {
   .logo {
@@ -540,9 +540,9 @@ body {
 
 .menu-toggle {
   border: none;
-  background-color: transparent;
-  margin-left: 253px;
+  margin-left: 286px;
   margin-right: 0;
+  background-color: transparent;
 }
 @media screen and (min-width: 768px) {
   .menu-toggle {
@@ -633,7 +633,7 @@ body {
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 380px) {
   .mobil-menu {
     width: 480px;
   }
