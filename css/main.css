@@ -371,14 +371,10 @@ body {
 }
 
 .main-navigation {
+  justify-content: center;
   width: 100%;
   padding: 0px 15px;
   margin: 0 auto;
-}
-@media screen and (min-width: 1200px) {
-  .main-navigation {
-    width: 1200px;
-  }
 }
 
 .navigation {
@@ -544,7 +540,7 @@ body {
 
 .menu-toggle {
   border: none;
-  margin-left: auto;
+  margin-left: 253px;
   margin-right: 0;
 }
 @media screen and (min-width: 768px) {
@@ -621,10 +617,6 @@ body {
   text-decoration: none;
 }
 
-.mobil-menu.is-open {
-  transform: translateX(0);
-}
-
 .mobil-menu {
   position: fixed;
   top: 0;
@@ -647,11 +639,15 @@ body {
   }
 }
 
+.mobil-menu.is-open {
+  transform: translateX(0);
+}
+
 .mobil-menu .menu-toggle {
   position: absolute;
   top: 16px;
   right: 16px;
-  color: #fff;
+  color: var(--primary-fon-color);
 }
 
 .hero {
@@ -1285,6 +1281,12 @@ input[placeholder] {
     width: 370px;
     height: 404px;
     margin: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+  .portfolio__list:last-child {
+    margin-right: auto;
   }
 }
 
