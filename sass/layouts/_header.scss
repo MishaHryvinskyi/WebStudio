@@ -6,12 +6,22 @@
 
 .main-navigation {
     @extend %flex-align;
-    justify-content: center;
-    padding: 0px;
+    width:100%;
+    padding: 0px 15px;
+    margin: 0 auto; 
+    
+    
+    
+    
+    @media screen and (min-width:1200px) {
+      width: 1200px;
+    
+    
+    }
 }
 
 .navigation {
-    margin-right: 318px;
+    
     display: none;
 
     @media screen and (min-width:768px) {
@@ -72,17 +82,20 @@
 
 .authentication {
     display: none;
+   
 
 
     @media screen and (min-width:768px) {
         display: flex;
         flex-direction: column;
+        margin-left: auto;
         
     }
 
     @media screen and (min-width:1200px) {
         display: flex;
         flex-direction: row;
+        margin-left: 318px;
     }
 
     & .header-link,

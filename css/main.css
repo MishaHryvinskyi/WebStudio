@@ -294,6 +294,7 @@ body {
 }
 
 .container {
+  width: 100%;
   padding: 0px 15px;
   margin: 0 auto;
 }
@@ -370,12 +371,17 @@ body {
 }
 
 .main-navigation {
-  justify-content: center;
-  padding: 0px;
+  width: 100%;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 1200px) {
+  .main-navigation {
+    width: 1200px;
+  }
 }
 
 .navigation {
-  margin-right: 318px;
   display: none;
 }
 @media screen and (min-width: 768px) {
@@ -436,12 +442,14 @@ body {
   .authentication {
     display: flex;
     flex-direction: column;
+    margin-left: auto;
   }
 }
 @media screen and (min-width: 1200px) {
   .authentication {
     display: flex;
     flex-direction: row;
+    margin-left: 318px;
   }
 }
 .authentication .header-link, .authentication {
