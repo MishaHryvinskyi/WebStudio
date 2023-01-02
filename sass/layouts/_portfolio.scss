@@ -11,6 +11,7 @@
 .portfolio__list {
   width: 100%;
   height: auto;
+  
  
   margin: 15px;
   align-items: center;
@@ -37,10 +38,11 @@
     //   }
 
 .portfolio__link {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: auto;
   text-decoration: none;
-  display: inline-block;
   transition-property: box-shadow ;
   transition-duration: 250ms;
   transition-timing-function: linear; 
@@ -69,7 +71,7 @@
 }
 
 .portfolio__image {
-  display: block;
+  display: flex;
   width: 100%;
 }
 
@@ -86,7 +88,6 @@
 }
 
 .cards {
-  display: block;
   border: 1px solid var(--color-cards-border);
   border-top: none;
   width: 100%;
@@ -95,6 +96,7 @@
   padding-bottom: 20px;
   padding-left: 24px;
   padding-right: 24px;
+  flex-grow: 1;
 }
 
 .cards__title {
