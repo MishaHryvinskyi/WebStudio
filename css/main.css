@@ -294,7 +294,6 @@ body {
 }
 
 .container {
-  width: 100%;
   padding: 0px 15px;
   margin: 0 auto;
 }
@@ -376,7 +375,7 @@ body {
 }
 
 .navigation {
-  margin-right: auto;
+  margin-right: 318px;
   display: none;
 }
 @media screen and (min-width: 768px) {
@@ -509,7 +508,8 @@ body {
 
 .mobil-menu {
   position: relative;
-  display: block;
+  display: flex;
+  flex-direction: column;
   background-color: var(--primary-fon-color);
   width: 100wv;
   height: 100wh;
@@ -517,6 +517,7 @@ body {
   left: 0;
   right: 0;
   padding: 48px 0px;
+  justify-content: space-between;
 }
 
 .menu-open {
@@ -551,7 +552,6 @@ body {
 
 .mob-navigation {
   display: block;
-  margin-bottom: 308px;
 }
 .mob-navigation__item {
   margin-bottom: 32px;
@@ -593,7 +593,6 @@ body {
 .mob-cocial-list {
   display: flex;
   list-style: none;
-  padding-left: 25px;
 }
 
 .mob-cocial__list > a {
@@ -604,6 +603,10 @@ body {
   font-weight: 500;
   line-height: 1.2222222222;
   letter-spacing: 0.02em;
+}
+
+.mob-cocial__list:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .link {
@@ -1278,10 +1281,11 @@ input[placeholder] {
 }
 
 .portfolio__link {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: auto;
   text-decoration: none;
-  display: inline-block;
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: linear;
@@ -1302,7 +1306,7 @@ input[placeholder] {
 }
 
 .portfolio__image {
-  display: block;
+  display: flex;
   width: 100%;
 }
 
@@ -1322,7 +1326,6 @@ input[placeholder] {
 }
 
 .cards {
-  display: block;
   border: 1px solid var(--color-cards-border);
   border-top: none;
   width: 100%;
@@ -1331,6 +1334,13 @@ input[placeholder] {
   padding-bottom: 20px;
   padding-left: 24px;
   padding-right: 24px;
+  flex-grow: 1;
+}
+
+@media screen and (min-width: 768px) and (max-width: 770px) {
+  .cards-one {
+    padding-bottom: 36px;
+  }
 }
 
 .cards__title {

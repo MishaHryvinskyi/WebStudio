@@ -99,6 +99,14 @@
   flex-grow: 1;
 }
 
+.cards-one {
+  @media screen and (min-width:768px) and (max-width:770px) {
+    
+  
+  padding-bottom: 36px;
+}
+}
+
 .cards__title {
     @include font($fs:18, $fw:700, $lh:36, $ls:0.06em);
     color: var(--primary-text-color);
