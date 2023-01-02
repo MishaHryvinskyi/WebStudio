@@ -550,6 +550,10 @@ body {
   }
 }
 
+.menu-toggle > .icon-close-mobile:active {
+  fill: var(--acent-color);
+}
+
 .icon-close-mobile {
   width: 18px;
   height: 18px;
