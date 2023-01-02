@@ -540,6 +540,7 @@ body {
 
 .menu-toggle {
   border: none;
+  background-color: transparent;
   margin-left: 253px;
   margin-right: 0;
 }
