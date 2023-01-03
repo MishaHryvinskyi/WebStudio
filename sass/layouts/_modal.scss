@@ -19,10 +19,16 @@
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     @media screen and (min-width: 300px) and (max-width: 768px) {
+      position: absolute;
+    top: 50%;
+    left: 50%;
       height: 609px;
       width: 450px;
     }
     @media screen and (min-width:768px) and (max-width:1199px){
+      position: absolute;
+    top: 50%;
+    left: 50%;
       height: 609px;
       width: 450px;
     }
