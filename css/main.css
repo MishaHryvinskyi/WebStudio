@@ -539,10 +539,11 @@ body {
 }
 
 .menu-toggle {
+  width: 40px;
+  height: 40px;
   border: none;
-  margin-left: 286px;
+  margin-left: 266px;
   margin-right: 0;
-  background-color: transparent;
 }
 @media screen and (min-width: 768px) {
   .menu-toggle {
@@ -555,18 +556,18 @@ body {
 }
 
 .icon-close-mobile {
-  width: 40px;
-  height: 40px;
+  width: 18px;
+  height: 18px;
 }
 
 .icon-mobile {
-  width: 40px;
-  height: 40px;
+  width: 24px;
+  height: 16px;
 }
 
 .icon-menu {
-  width: 40px;
-  height: 40px;
+  width: 24px;
+  height: 16px;
 }
 
 .mob-navigation {
