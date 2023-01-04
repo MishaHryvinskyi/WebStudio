@@ -662,7 +662,7 @@ body {
 .mob-cocial-list {
   display: flex;
   list-style: none;
-  padding-left: 40px;
+  padding-left: 30px;
 }
 
 .mob-cocial__list > a {
