@@ -501,6 +501,12 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .heder-link-link:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
 .current::after {
   position: absolute;
   content: "";

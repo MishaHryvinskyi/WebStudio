@@ -113,9 +113,11 @@
     color: var(--secondary-texy-color);
     @media screen and (min-width:768px) {
         padding: 0px;
-        
+       
     }
 }
+
+
 
     & .header-link:hover,
     & .header-link:focus 
@@ -135,6 +137,13 @@
 }
 
 } 
+
+.heder-link-link:not(:last-child) {
+    @media screen and (min-width:768px) {
+margin-bottom: 10px;
+        
+    }
+}
 
 
 .current::after {
