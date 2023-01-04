@@ -699,7 +699,7 @@ body {
 }
 @media screen and (min-width: 300px) and (max-width: 320px) {
   .mobil-menu {
-    width: 100%;
+    width: 480px;
     transform: translateX(100%);
   }
 }
