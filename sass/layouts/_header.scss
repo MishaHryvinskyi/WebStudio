@@ -310,9 +310,16 @@ margin-bottom: 10px;
 }
 
 .mob-authentication {
-    margin-bottom: 64px;
+    margin-bottom: 32px;
 }
 
+.mob-authentication__tel{
+    @include font($fs:34, $fw:500, $lh:40, $ls:0.02em);
+}
+
+.mob-authentication__mail{
+    @include font($fs:24, $fw:500, $lh:28, $ls:0.02em);
+}
 .mob-authentication__item {
     margin-bottom: 32px;
     list-style: none;
