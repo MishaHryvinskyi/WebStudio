@@ -124,7 +124,6 @@
 
     &__icon {
     margin-right: 10px;
-
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width:1200px) {
@@ -195,9 +194,6 @@
     left: 0;
     right: 0;
     padding: 48px 0px ;
-    justify-content: space-between;
-   
-    
 }
 
 
@@ -215,6 +211,8 @@
     display: block;
     
 }
+
+
 
 .mob-navigation__item {
     list-style: none;
@@ -272,8 +270,9 @@
 
 .mob-navigation {
     display: block;
+    margin-bottom: auto;
     
-    &__item {
+    &__item:not(:last-child) {
         margin-bottom: 32px;
     }
 }
@@ -297,6 +296,10 @@
         justify-content: center;
     }
 
+}
+
+.mob-authentication {
+    margin-bottom: 64px;
 }
 
 .mob-authentication__item {

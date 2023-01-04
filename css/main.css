@@ -553,7 +553,6 @@ body {
   left: 0;
   right: 0;
   padding: 48px 0px;
-  justify-content: space-between;
 }
 
 .menu-open {
@@ -617,8 +616,9 @@ body {
 
 .mob-navigation {
   display: block;
+  margin-bottom: auto;
 }
-.mob-navigation__item {
+.mob-navigation__item:not(:last-child) {
   margin-bottom: 32px;
 }
 
@@ -639,6 +639,10 @@ body {
 .header-link-mobile {
   align-items: center;
   justify-content: center;
+}
+
+.mob-authentication {
+  margin-bottom: 64px;
 }
 
 .mob-authentication__item {
