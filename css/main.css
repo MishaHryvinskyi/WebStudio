@@ -460,7 +460,6 @@ body {
 }
 .header-link {
   align-items: center;
-  justify-content: center;
 }
 
 .authentication {
@@ -469,7 +468,6 @@ body {
 @media screen and (min-width: 768px) {
   .authentication {
     display: flex;
-    justify-content: center;
     flex-direction: column;
     margin-left: auto;
   }
@@ -477,7 +475,6 @@ body {
 @media screen and (min-width: 1200px) {
   .authentication {
     display: flex;
-    justify-content: center;
     flex-direction: row;
     margin-left: 318px;
   }
