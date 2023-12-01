@@ -1,67 +1,59 @@
 .logo {
-    font-family: 'Raleway', 'sans-serif';
-    @include font($fs:24, $fw:700, $lh:28, $ls:0.03em);
-    text-decoration: none;
-    color: var(--primary-text-color); 
-    padding: 16px  0 ;
+  font-family: 'Raleway', 'sans-serif';
+  @include font($fs:24, $fw:700, $lh:28, $ls:0.03em);
+  text-decoration: none;
+  color: var(--primary-text-color); 
+  padding: 16px  0 ;
     
-    @media screen and (min-width: 320px) {
-      margin-right: 0px;
-      padding: 26px 0px;
-    }
+  @media screen and (min-width: 320px) {
+    margin-right: 0px;
+    padding: 26px 0px;
+  }
 
-    @media screen and (min-width: 480px) {
-      margin-right: 0px;
-      padding: 26px 0px;
-    }
+  @media screen and (min-width: 480px) {
+    margin-right: 0px;
+    padding: 26px 0px;
+  }
 
-    @media screen and (min-width: 768px) {
-      margin-right: auto;
-      padding: 26px 0px;
-    }
+  @media screen and (min-width: 768px) {
+    margin-right: auto;
+    padding: 26px 0px;
+  }
 
-    @media screen and (min-width: 768px) {
-      margin-right: 88px;  
-      padding: 26px 0px;
-        
-        
-      }
-      @media screen and (min-width: 1200px) {
-        @include font($fs:26, $fw:700, $lh:31, $ls:0.03em);
-        margin-right: 93px;   
-        
-          
-        
-      }
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;  
+    padding: 26px 0px; 
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include font($fs:26, $fw:700, $lh:31, $ls:0.03em);
+    margin-right: 93px;    
+  }
 }
 .logo-web {
-    color: var(--acent-color)
+  color: var(--acent-color)
 }
 
 .logo__footer {
-    font-family: 'Raleway', 'sans-serif';
-    @include font($fs:24, $fw:700, $lh:28, $ls:0.03em);
-    color: var(--primary-fon-color);
-    text-decoration: none;
-    display: flex; 
-    justify-content: center;
-    & {
-        margin-bottom: 20px;
-      }  
+  font-family: 'Raleway', 'sans-serif';
+  @include font($fs:24, $fw:700, $lh:28, $ls:0.03em);
+  color: var(--primary-fon-color);
+  text-decoration: none;
+  display: flex; 
+  justify-content: center;
+  & {
+    margin-bottom: 20px;
+  }  
 
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+    padding-left: 39px; 
+  }
 
-      @media screen and (min-width: 768px) {
-        display: inline-block;
-        padding-left: 39px;
-        
-        
-        
-      }
-      @media screen and (min-width: 1200px) {
-        @include font($fs:26, $fw:700, $lh:31, $ls:0.03em);
- 
-        align-items:flex-start;
-        padding-left: 0px;
+  @media screen and (min-width: 1200px) {
+    @include font($fs:26, $fw:700, $lh:31, $ls:0.03em);
+    align-items:flex-start;
+    padding-left: 0px;
   }
 }
   

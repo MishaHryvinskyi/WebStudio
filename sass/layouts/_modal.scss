@@ -1,187 +1,194 @@
 .backdrop {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--background-color-modal-window);
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .modal {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background-color-modal-window);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  height: 581px;
+  width: 528px;
+  background: var(--primary-fon-color);
+  box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
+  border-radius: 4px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 320px) and (max-width: 768px) {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    height: 581px;
-    width: 528px;
-    background: var(--primary-fon-color);
-    box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
-    border-radius: 4px;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    @media screen and (min-width: 320px) and (max-width: 768px) {
-      position: absolute;
-    top: 50%;
-    left: 50%;
-      height: 609px;
-      width: 450px;
-    }
-    @media screen and (min-width:768px) and (max-width:1199px){
-      position: absolute;
-    top: 50%;
-    left: 50%;
-      height: 609px;
-      width: 450px;
-    }
-  }
-  
-  .backdrop.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    overflow: visible;
-    &.is-hidden .modal {
-      transform: translate(-50%, -50%) scale(0) ;
-    }
-  }
-  
-  .button-close__icon {
-    width: 18px;
-    height: 18px;
-  }
-  
-  .form {
-    position: relative;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-left: 41px;
-    padding-right: 39px;
-   justify-content: center;
-   text-align: center;
+    height: 609px;
+    width: 450px;
   }
 
-  .form__title {
-    @include font($fs:20, $fw:700, $lh:23, $ls:0.03em);
-    text-align: center;
-    margin-bottom: 12px;
-    color: var(--primary-text-color);
-
-    @media screen and (min-width: 480px) and (max-width: 768px) {
-      @include font($fs:20, $fw:700, $lh:30, $ls:0.03em);
-    }
-
-    }
-
-  .form__group {
-      margin-bottom: 10px;
-   }
-  
-  .label {
-    display: flex;
-    align-items: left;
-    color: var(--secondary-texy-color);
-    @include font($fs:12, $fw:null, $lh:14, $ls:0.01em);
-    margin-bottom: 4px;
-    @media screen and (min-width: 480px) and (max-width: 768px) {
-      @include font($fs:10, $fw:null, $lh:12, $ls:0.01em);
-    }
-
-  } 
-
-  .position-icon {
-    position: relative;
-  }
-
-  .input-style {
-    border: 1px solid var(--modal-input-color);
-    border-radius: 4px;
-    width: 100%;
-    height: 40px;
-    left: 576px;
-    top: 382px; 
-    padding-left: 42px;
-
-    &:focus-visible {
-      border-color: var(--acent-color);
-    }
-    &:focus-within {
-      border-color: var(--acent-color);
-    } 
-    &:focus-within +svg{
-      fill:var(--acent-color);
-      transition-property: fill;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      fill: var(--acent-color);
-    } 
-  } 
-
-  .input-style__input-svg {
+  @media screen and (min-width:768px) and (max-width:1199px){
     position: absolute;
-    width: 18px;
-    height: 18px;
-    top:50%;
-    left: 15px;
-    transform: translateY(-50%);
+    top: 50%;
+    left: 50%;
+    height: 609px;
+    width: 450px;
   }
+}
   
-  .style-area {
-    resize:none;
-    margin: 0px;
-    column-count:unset;
-    margin-bottom: 14px;
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  overflow: visible;
+
+  &.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0) ;
+  }
+}
+  
+.button-close__icon {
+  width: 18px;
+  height: 18px;
+}
+  
+.form {
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 41px;
+  padding-right: 39px;
+  justify-content: center;
+  text-align: center;
+}
+
+.form__title {
+  @include font($fs:20, $fw:700, $lh:23, $ls:0.03em);
+  text-align: center;
+  margin-bottom: 12px;
+  color: var(--primary-text-color);
+
+  @media screen and (min-width: 480px) and (max-width: 768px) {
+    @include font($fs:20, $fw:700, $lh:30, $ls:0.03em);
+  }
+}
+
+.form__group {
+  margin-bottom: 10px;
+}
+  
+.label {
+  display: flex;
+  align-items: left;
+  color: var(--secondary-texy-color);
+  @include font($fs:12, $fw:null, $lh:14, $ls:0.01em);
+  margin-bottom: 4px;
+
+  @media screen and (min-width: 480px) and (max-width: 768px) {
+    @include font($fs:10, $fw:null, $lh:12, $ls:0.01em);
+  }
+} 
+
+.position-icon {
+  position: relative;
+}
+
+.input-style {
+  border: 1px solid var(--modal-input-color);
+  border-radius: 4px;
+  width: 100%;
+  height: 40px;
+  left: 576px;
+  top: 382px; 
+  padding-left: 42px;
+
+  &:focus-visible {
+    border-color: var(--acent-color);
   }
 
-  .label__text-area {
-    resize: none;
-    width: 100%;
-    height: 120px;
-    border: 1px solid var(--modal-input-color);
-    border-radius: 4px;
-    padding: 12px 16px; 
-    &:focus-within {
-      border: 1px solid var(--acent-color);
-      transition-property: border;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
+  &:focus-within {
+    border-color: var(--acent-color);
   } 
 
-  textarea [placeholder] {
-    @include font($fs:12, $fw:null, $lh:14, $ls:0.01em);
-    color: rgba(117, 117, 117, 0.5);
-  }
+  &:focus-within +svg{
+    fill:var(--acent-color);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    fill: var(--acent-color);
+  } 
+} 
+
+.input-style__input-svg {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top:50%;
+  left: 15px;
+  transform: translateY(-50%);
+}
   
-  .checkbox-style {
-    @extend %flex-align;
-    justify-content: center;
-    margin-bottom: 30px;
+.style-area {
+  resize:none;
+  margin: 0px;
+  column-count:unset;
+  margin-bottom: 14px;
+}
+
+.label__text-area {
+  resize: none;
+  width: 100%;
+  height: 120px;
+  border: 1px solid var(--modal-input-color);
+  border-radius: 4px;
+  padding: 12px 16px; 
+
+  &:focus-within {
+    border: 1px solid var(--acent-color);
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+} 
+
+textarea [placeholder] {
+  @include font($fs:12, $fw:null, $lh:14, $ls:0.01em);
+  color: rgba(117, 117, 117, 0.5);
+}
+  
+.checkbox-style {
+  @extend %flex-align;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.input-checkbox__label {
+  @extend %flex-align;
+  border: none;
+  @include font($fs:12, $fw:null, $lh:14, $ls:0.03em);
+
+  &::before {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--primary-text-color);
+    border-radius: 2px;
+    margin-right: 8px;
   }
 
-  .input-checkbox__label {
-    @extend %flex-align;
-    border: none;
-    @include font($fs:12, $fw:null, $lh:14, $ls:0.03em);
-    &::before {
-      content: '';
-      display: block;
-      width: 16px;
-      height: 15px;
-      border: 2px solid var(--primary-text-color);
-      border-radius: 2px;
-      margin-right: 8px;
-    }
-    @media screen and (min-width:1200px) {
-      @include font($fs:14, $fw:null, $lh:24, $ls:0.03em);
-    }
+  @media screen and (min-width:1200px) {
+    @include font($fs:14, $fw:null, $lh:24, $ls:0.03em);
   }
+}
 
-  .linc-conditions {
-    color: var(--acent-color);
-    margin-left: 7px;
-  }
+.linc-conditions {
+  color: var(--acent-color);
+  margin-left: 7px;
+}
   
-  .input-checkbox:checked + label::before {
-    border: none;
-    background-color: var(--primary-text-color);
-    background-image: url(../images/icon\ check.svg);
-  }
+.input-checkbox:checked + label::before {
+  border: none;
+  background-color: var(--primary-text-color);
+  background-image: url(../images/icon\ check.svg);
+}
